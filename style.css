@@ -87,3 +87,36 @@ nav .callback:active {
 nav ul li a, nav .callback {
     cursor: pointer;
 }
+
+/* Container styling for the section */
+.section {
+    text-align: center;
+    padding: 50px 20px; /* Adjust padding as needed */
+    background-color: #f9f9f9; /* Adjust background color as needed */
+}
+
+/* Styling for the heading */
+.section h2 {
+    font-size: 32px; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #333; /* Adjust text color as needed */
+    margin-bottom: 10px; /* Space between heading and horizontal line */
+}
+
+/* Styling for the horizontal line */
+.section .line {
+    display: block;
+    width: 50px; /* Adjust width as needed */
+    height: 3px; /* Adjust height as needed */
+    background-color: #e0e0e0; /* Adjust color as needed */
+    margin: 0 auto 20px; /* Center the line and add space below */
+}
+
+/* Styling for the paragraph text */
+.section p {
+    font-size: 16px; /* Adjust font size as needed */
+    color: #666; /* Adjust text color as needed */
+    line-height: 1.5;
+    max-width: 600px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center the paragraph */
+}
