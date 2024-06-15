@@ -114,3 +114,153 @@ nav .callback:active {
     max-width: 600px; 
     margin: 0 auto; 
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.team-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px; 
+    background-color: #f9f9f9; 
+}
+
+
+.team-member {
+    text-align: center;
+    position: relative;
+    width: 200px; 
+    margin: 20px;
+}
+
+.team-member .image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.team-member .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 170, 255, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.team-member .overlay .social-icons {
+    display: flex;
+}
+
+.team-member .overlay .social-icons a {
+    margin: 0 10px; 
+}
+
+.team-member .overlay .social-icons img {
+    width: 30px; 
+}
+
+.team-member h3 {
+    font-size: 18px; 
+    color: #333; 
+    margin-top: 10px;
+}
+
+.team-member p {
+    font-size: 14px; 
+    color: #777; 
+}
+
+/* Hover effects */
+.team-member .image-container:hover img {
+    transform: scale(1.1);
+}
+
+.team-member .image-container:hover .overlay {
+    opacity: 1;
+}
+
+
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the header container */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: white; /* Adjust background color as needed */
+}
+
+/* Styling the logo */
+.logo img {
+    height: 50px; /* Adjust size as needed */
+    margin-bottom: 20px;
+}
+
+/* Styling the navigation menu */
+.navigation ul {
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.navigation ul li {
+    display: inline;
+    margin: 0 15px; /* Adjust spacing between menu items */
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px; /* Adjust font size as needed */
+    transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    color: #00aaff; /* Hover color */
+}
+
+
+/* Styling the social icons */
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px; /* Adjust spacing between icons */
+    transition: transform 0.3s ease;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust size as needed */
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); /* Hover effect */
+}
+
+/* Styling the active button */
+.navigation ul li a:active {
+    color: #00aaff; /* Color when clicked */
+}
+
+/* Ensuring the cursor changes to pointer */
+.navigation ul li a, .social-icons a {
+    cursor: pointer;
+}
