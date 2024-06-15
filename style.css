@@ -1,0 +1,89 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the navigation bar container */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* Adjust if you have a different background */
+    padding: 10px 20px;
+    border-bottom: 2px solid blue; /* Blue underline at the bottom */
+}
+
+/* Logo styling */
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 40px; /* Adjust as needed */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+nav .logo span {
+    font-size: 20px; /* Adjust as needed */
+    font-weight: bold;
+}
+
+/* Styling the navigation links */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul li {
+    margin: 0 20px; /* Spacing between links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00aaff; /* Change this color to the desired hover color */
+}
+
+/* Highlighting the active link */
+nav ul li a.active {
+    color: #030608; /* Color of the active link */
+}
+
+/* Styling the callback button */
+nav .callback {
+    padding: 10px 20px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+nav .callback:hover {
+    background-color: #00aaff;
+    color: white;
+    cursor: pointer;
+}
+
+/* Active state for the callback button when clicked */
+nav .callback:active {
+    background-color: #00aaff;
+    color: white;
+}
+
+/* Cursor pointer for links */
+nav ul li a, nav .callback {
+    cursor: pointer;
+}
