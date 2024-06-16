@@ -155,7 +155,7 @@ nav .callback:active {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 170, 255, 0.8); 
+    background-color: rgba(#00aaff); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,7 +168,7 @@ nav .callback:active {
 }
 
 .team-member .overlay .social-icons a {
-    margin: 0 10px; 
+    margin: 0 10 px; 
 }
 
 .team-member .overlay .social-icons img {
@@ -186,7 +186,7 @@ nav .callback:active {
     color: #777; 
 }
 
-/* Hover effects */
+
 .team-member .image-container:hover img {
     transform: scale(1.1);
 }
@@ -195,28 +195,26 @@ nav .callback:active {
     opacity: 1;
 }
 
-
-/* Basic reset for margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Styling the header container */
+
 .header {
     text-align: center;
     padding: 20px;
-    background-color: white; /* Adjust background color as needed */
+    background-color: white; 
 }
 
-/* Styling the logo */
+
 .logo img {
-    height: 50px; /* Adjust size as needed */
-    margin-bottom: 20px;
+    height: 50px; 
+    margin-bottom: 25px;
 }
 
-/* Styling the navigation menu */
+
 .navigation ul {
     list-style: none;
     display: inline-block;
@@ -225,42 +223,61 @@ nav .callback:active {
 
 .navigation ul li {
     display: inline;
-    margin: 0 15px; /* Adjust spacing between menu items */
+    margin: 0 15px; 
 }
 
 .navigation ul li a {
     text-decoration: none;
-    color: black;
-    font-size: 18px; /* Adjust font size as needed */
+    color: rgb(19, 17, 17);
+    font-size: 18px; 
     transition: color 0.3s ease;
 }
 
 .navigation ul li a:hover {
-    color: #00aaff; /* Hover color */
+    color: #00aaff; 
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
 
-/* Styling the social icons */
 .social-icons a {
-    display: inline-block;
-    margin: 0 10px; /* Adjust spacing between icons */
-    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px; 
+    width: 50px; 
+    height: 50px; 
+    border: 2px solid #00aaff; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    line-height: 46px;
 }
 
 .social-icons img {
-    width: 30px; /* Adjust size as needed */
+    width: 24px; 
+    height: 24px;  
+    transition: filter 0.3s ease;
+
 }
 
 .social-icons a:hover {
-    transform: scale(1.1); /* Hover effect */
+    background-color: #00aaff; 
+    border-color: #00aaff;
+
 }
 
-/* Styling the active button */
+
 .navigation ul li a:active {
-    color: #00aaff; /* Color when clicked */
+    color: #00aaff; 
 }
 
-/* Ensuring the cursor changes to pointer */
+
 .navigation ul li a, .social-icons a {
     cursor: pointer;
 }
