@@ -316,9 +316,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    margin: 10px;
     background-color: #ffffff;
+    margin-top: 10px;
+    transform: translateX(20px);
+    
 }
+
 
 .social-icons a {
     display: flex;
