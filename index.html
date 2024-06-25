@@ -3,93 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMACSS and BEM</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>ITLIFE</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<nav>
-    <div class="logo">
-        <img src="img/logo.svg" alt="Logo"> 
-    </div>
-    <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#contacts">CONTACTS</a></li>
-    </ul>
-    <a href="#callback" class="callback">CALLBACK</a>
-</nav>
-
-<div class="section">
-    <h2>WHO WE ARE</h2>
-    <span class="line"></span>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</div>
-
-<div class="team-section">
-    <div class="team-member">
-        <div class="image-container">
-            <img src="img/hover-card.svg" alt="John Handson"> 
-            <div class="overlay">
-                <div class="social-icons">
-                    <a href="#"><img src="img/twitter.svg" alt="Twitter"></a>
-                    <a href="#"><img src="img/facebook.svg" alt="Facebook"></a>
-                    <a href="#"><img src="img/instagram-icon.svg" alt="Instagram"></a>
+    <header class="header">
+        <div class="header__logo"><img src="img/logo.svg" alt="Logo"></div>
+       
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#" class="header__nav-link">HOME</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">SERVICES</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">ABOUT</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">CONTACTS</a></li>
+            </ul>
+        </nav>
+        <button class="header__callback-btn">CALLBACK</button>
+    </header>
+    <main class="main">
+        <section class="about">
+            <h2 class="about__title">WHO WE ARE</h2>
+            <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                 incididunt ut labore et dolore magna aliqua.</p>
+            <div class="about__team">
+                <div class="team-member">
+                    <img src="img/DSC66656565665_0679.jpg" alt="Pronin Denys" class="team-member__photo">
+                    <h3 class="team-member__name">Denys Pronin</h3>
+                    <p class="team-member__role">Lead Designer</p>
+                </div>
+                <div class="team-member">
+                    <img src="img/team-item.svg" alt="Alex Cutter" class="team-member__photo">
+                    <h3 class="team-member__name">Alex Cutter</h3>
+                    <p class="team-member__role">Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="img/card.svg" alt="Elena Simpson" class="team-member__photo">
+                    <h3 class="team-member__name">Elena Simpson</h3>
+                    <p class="team-member__role">Artist</p>
+                </div>
+                <div class="team-member">
+                    <img src="img/photo.svg" alt="Lily Allen" class="team-member__photo">
+                    <h3 class="team-member__name">Lily Allen</h3>
+                    <p class="team-member__role">Graphic Designer</p>
                 </div>
             </div>
+        </section>
+    </main>
+    <footer class="footer">
+        
+        <img src="img/logo.svg" alt="ITLIFE Logo" class="footer__logo">
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">HOME</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">SERVICES</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">ABOUT</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">CONTACTS</a></li>
+            </ul>
+        </nav>
+        <div class="footer__socials">
+            <a href="" class="footer__social-link"><img src="img/twitter.svg" alt=""></a>
+            <a href="" class="footer__social-link"><img src="img/facebook.svg" alt=""></a>
+            <a href="" class="footer__social-link"><img src="img/instagram.svg" alt=""></a>
+            <a href="" class="footer__social-link"><img src="img/linkedin.svg" alt=""></a>
+            <a href="" class="footer__social-link"><img src="img/telegram.svg" alt=""></a>
         </div>
-        <h3>John Handson</h3>
-        <p>Lead designer</p>
-    </div>
 
-    <div class="team-member">
-        <div class="image-container">
-            <img src="img/team-item.svg" alt="Alex Cutter"> 
-        </div>
-        <h3>Alex Cutter</h3>
-        <p>Developer</p>
-    </div>
-
-    <div class="team-member">
-        <div class="image-container">
-            <img src="img/card.svg" alt="Elena Simpson"> 
-        </div>
-        <h3>Elena Simpson</h3>
-        <p>Artist</p>
-    </div>
-
-    <div class="team-member">
-        <div class="image-container">
-            <img src="img/photo.svg" alt="Lily Allen"> 
-        </div>
-        <h3>Lily Allen</h3>
-        <p>Graphic Designer</p>
-    </div>
-</div>
+    </footer>
 </body>
-<footer>
-        
-    <div class="logo">
-        <img src="img/logo.svg" alt="Логотип ITLife">
-    
-    </div>
-    <ul class="nav-menu">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">CONTACTS</a></li>
-    </ul>
-        
-        
-        <div class="social-icons">
-            <a href="#"><img src="img/twitter.svg" alt="Twitter"></a> 
-            <a href="#"><img src="img/facebook.svg" alt="Facebook"></a>
-            <a href="#"><img src="img/instagram-icon.svg" alt="Instagram"></a>
-            <a href="#"><img src="img/linkedinicon.svg" alt="LinkedIn"></a>
-            <a href="#"><img src="img/telegram-icon.svg" alt="Telegram"></a>
-        </div>
-
-</footer>
-
 </html>

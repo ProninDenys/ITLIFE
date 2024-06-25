@@ -1,370 +1,190 @@
-
-* {
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white; 
-    padding: 10px 20px;
-    border-bottom: 2px solid blue; 
-}
-
-
-nav .logo {
-    display: flex;
-    align-items: center;
-}
-
-nav .logo img {
-    height: 45px; 
-    margin-right: 20px; 
-}
-
-nav .logo span {
-    font-size: 20px; 
-    font-weight: bold;
-}
-
-
-nav ul {
-    list-style: none;
+/* Header styles */
+.header {
     display: flex;
     justify-content: center;
-    flex-grow: 1;
-}
-
-nav ul li {
-    margin: 0 20px; 
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-weight: normal;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #00aaff; 
-}
-
-
-nav ul li a.active {
-    color: #030608; 
-}
-
-
-nav .callback {
-    padding: 10px 20px;
-    border: 1px solid black;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    font-size: 16px;
-    transition: all 0.3s ease;
-}
-
-nav .callback:hover {
-    background-color: #00aaff;
-    color: white;
-    cursor: pointer;
-}
-
-nav .callback:active {
-    background-color: #00aaff;
-    color: white;
-}
-
-
-.section {
-    text-align: center;
-    padding: 50px 20px; 
-    background-color: #ffffff;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
     position: relative;
-    top: 60px;
-    
+    margin-top: 300 px;
 }
 
-
-.section h2 {
-    font-size: 32px; 
+.header__logo {
+    font-size: 24px;
     font-weight: bold;
-    color: #333; 
-    margin-bottom: 10px; 
+    position: absolute;
+    left: 4cm;
+
 }
 
+.img__src {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 2cm;
 
-.section .line {
-    display: block;
-    width: 50px; 
-    height: 3px; 
-    background-color: #e0e0e0; 
-    margin: 0 auto 20px; 
+} 
+
+.header__nav {
+    display: flex;
+    flex-grow: 4; /* Позволяет распределить элементы */
+    justify-content: center;
 }
 
-
-.section p {
-    font-size: 16px; 
-    color: #666; 
-    line-height: 1.5;
-    max-width: 600px; 
-    margin: 0 auto;
-}
-
-
-* {
+.header__nav-list {
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-.team-section {
+.header__nav-item {
+    margin: 0 20px;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.header__nav-link:hover {
+    color: #00aaff; /* Синій колір при наведенні */
+}
+
+.header__callback-btn {
+    padding: 10px 20px;
+    border: 1px solid black;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    position: absolute;
+    right: 3cm;
+}
+
+.header__callback-btn:hover {
+    background-color: #00aaff; /* Синій колір при наведенні */
+    color: white;
+}
+
+/* Main styles */
+.main {
+    padding: 20px;
+    margin-bottom: 200px;
+    font-family: Arial, sans-serif;;
+}
+
+.about {
+    text-align: center;
+    margin-top: 2cm;
+}
+
+.about__title {
+    font-size: 36px;
+    margin-bottom: 1cm;
+}
+
+.about__description {
+    font-size: 16px;
+    margin-bottom: 40px;
+    white-space: pre-wrap; /* Сохраняет пробелы и разрывы строк */
+    text-align: center; /* Центрирование текста */
+    line-height: 1.5; /* Межстрочный интервал */
+}
+
+.about__team {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px 250px; 
-    background-color: #ffffff;
-    
+    justify-content: center;
+    gap: 50px;
 }
 
 .team-member {
-    text-align: center;
-    position: relative;
-    width: 200px; 
-    margin: 20px;
-   
-
-}
-
-.team-member .image-container {
-    position: relative;
-    overflow: hidden;
-}
-
-.team-member img {
-    width: 100%;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.team-member .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(#2781ae); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.team-member .overlay .social-icons {
-    display: flex;
-}
-
-.team-member .overlay .social-icons a {
-    margin: 0 10 px; 
-}
-
-.team-member .overlay .social-icons img {
-    width: 30px; 
-}
-
-.team-member h3 {
-    font-size: 15px; 
-    color: #333; 
-    margin-top: 10px;
     text-align: left;
 }
 
-.team-member p {
-    font-size: 13px; 
-    color: #777;
-    text-align: left; 
+.team-member__photo {
+    width: 150px;
+    height: 150px;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
 }
 
-
-.team-member .image-container:hover img {
-    transform: scale(1.1);
+.team-member__photo--john {
+    background-image: url('john.jpg');
+    background-size: cover;
 }
 
-.team-member .image-container:hover .overlay {
-    opacity: 1;
+.team-member__name {
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
-* {
+.team-member__role {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer__logo {
+    margin-bottom: 0.5cm; /* Пробел 0,5 см ниже логотипа */
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1cm; /* Отстань між навігацією і іконками соціальних мереж */
+}
+
+.footer__nav-list {
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-
-.header {
-    text-align: center;
-    padding: 20px;
-    background-color: white; 
+.footer__nav-item {
+    margin: 0 20px;
 }
 
-.footer {
- text-align: center;
-    padding: 20px;
-    background-color: white;
-
-}
-
-.logo img {
-    height: 50px; 
-    margin-bottom: 25px;
-    position: relative;
-    left: 100px;
-    top: 10px;
-}
-
-.nav-container {
-    height: 50px; 
-    margin-bottom: 105px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-
-}
-
-.navigation ul {
-    list-style: none;
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-right: 100px;
-   
-}
-
-.navigation ul li {
-    display: inline;
-    margin: 0 15px;
-   
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: #ffffff;
-}
-.logo {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-    transform: translateX(-40px);
-}
-.logo img {
-    width: 170px; 
-    margin-right: 140px;
-    
-}
-.logo span {
-    font-size: 80px;
-    font-weight: bold;
-}
-.nav-menu {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-    display: flex;
-    justify-content: center;
-   
-    
-}
-.nav-menu li {
-    margin: 0 20px; 
-    
-}
-.nav-menu a {
+.footer__nav-link {
     text-decoration: none;
-    color: #000;
-    font-size: 16px;
-   
-    
+    color: black;
 }
 
-.navigation ul li a {
+.footer__nav-link:hover {
+    color: #00aaff; /* Синій колір при наведенні */
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Відстань між соціальними іконками */
+}
+
+.footer__social-link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    border-radius: 50%;
     text-decoration: none;
-    color: rgb(19, 17, 17);
-    font-size: 18px; 
-    transition: color 0.3s ease;
-       
-}
-
-.navigation ul li a:hover {
-    color: #00aaff; 
-    align-items: center;
-    
-
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-    background-color: #ffffff;
-    margin-top: 10px;
-    transform: translateX(20px);
-    
-}
-
-
-.social-icons a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-    transform: translateX(-25px);
-    margin: 0 15px; 
-    width: 30px; 
-    height: 30px; 
-    border: 2px solid #00aaff; 
-    border-radius: 02px; 
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    line-height: 40px;
+    color: white;
     text-align: center;
-    line-height: 46px;
 }
 
-.social-icons img {
-    width: 14px; 
-    height: 14px;  
-    transition: filter 0.3s ease;
-
+.footer__social-link:hover {
+    background-color: #00aaff; /* Синій колір при наведенні */
 }
-
-.social-icons a:hover {
-    background-color: #00aaff; 
-    border-color: #00aaff;
-
-}
-
-
-.navigation ul li a:active {
-    color: #00aaff;
-    justify-content: center;
-    
-}
-
-
-.navigation ul li a, .social-icons a {
-    cursor: pointer;
-   
-}
-
-
