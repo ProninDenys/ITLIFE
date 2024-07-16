@@ -22,6 +22,7 @@ body {
     font-weight: bold;
     position: absolute;
     left: 4cm;
+    margin-left: -60px;
 
 }
 
@@ -109,6 +110,15 @@ body {
     text-align: left;
 }
 
+
+.team-member__photo-first {
+    width: 135px;
+    height: 150px;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+
+}
+ 
 .team-member__photo {
     width: 150px;
     height: 150px;
@@ -212,3 +222,4 @@ body {
     border-radius: 5px;
     font-size: 16px;
 }
+   
