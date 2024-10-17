@@ -141,6 +141,20 @@ body {
     color: gray;
 }
 
+.team-member__photo:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.team-member__name:hover,
+.team-member__role:hover {
+    color: #00aaff; 
+    transform: scale(1.05); 
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+
 
 .footer {
     background-color: #f8f8f8;
@@ -197,7 +211,9 @@ body {
 }
 
 .footer__social-link:hover {
-    background-color: #00aaff; 
+    background-color: #00aaff;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .site-header {
