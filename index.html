@@ -1,25 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMACSS або BEM</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITLIFE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/44.gif" type="image/x-icon">
 
-<nav>
-    <div class="logo">
-        <img src="img/logo.svg" alt="Logo"> <!-- Replace with your logo image path -->
-    </div>
-    <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#contacts">CONTACTS</a></li>
-    </ul>
-    <a href="#callback" class="callback">CALLBACK</a>
-</nav>
-
-</body>
+  </head>
+  <body>
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            <img src="img/logo.svg" alt="Logo">
+        </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">HOME</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">SERVICES</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">ABOUT</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">CONTACTS</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__callback-btn">CALLBACK</button>
+    </header>
+    <main class="main">
+      <section class="about">
+        <h2 class="about__title">WHO WE ARE</h2>
+        <p class="about__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div class="about__team">
+          <div class="team-member">
+            <img
+              src="img/team-item.svg"
+              alt="Alex Cutter"
+              class="team-member__photo"
+            />
+            <h3 class="team-member__name">Alex Cutter</h3>
+            <p class="team-member__role">Developer</p>
+          </div>
+          <div class="team-member">
+            <img
+              src="img/card.svg"
+              alt="Elena Simpson"
+              class="team-member__photo"
+            />
+            <h3 class="team-member__name">Elena Simpson</h3>
+            <p class="team-member__role">Artist</p>
+          </div>
+          <div class="team-member">
+            <img
+              src="img/photo.svg"
+              alt="Lily Allen"
+              class="team-member__photo"
+            />
+            <h3 class="team-member__name">Lily Allen</h3>
+            <p class="team-member__role">Graphic Designer</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img src="img/logo.svg" alt="ITLIFE Logo" class="footer__logo" />
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">HOME</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">SERVICES</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">ABOUT</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">CONTACTS</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__socials">
+        <a
+          href="https://www.twitter.com"
+          target="_blank"
+          class="footer__social-link"
+        >
+          <img src="img/twitter.svg" alt="Twitter" />
+        </a>
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          class="footer__social-link"
+        >
+          <img src="img/facebook.svg" alt="Facebook" />
+        </a>
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          class="footer__social-link"
+        >
+          <img src="img/instagram.svg" alt="Instagram" />
+        </a>
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          class="footer__social-link"
+        >
+          <img src="img/linkedin.svg" alt="LinkedIn" />
+        </a>
+        <a
+          href="https://www.telegram.org"
+          target="_blank"
+          class="footer__social-link"
+        >
+          <img src="img/telegram.svg" alt="Telegram" />
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>

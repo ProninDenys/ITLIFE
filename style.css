@@ -1,89 +1,241 @@
-/* Basic reset for margin and padding */
-* {
+
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Styling the navigation bar container */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white; /* Adjust if you have a different background */
-    padding: 10px 20px;
-    border-bottom: 2px solid blue; /* Blue underline at the bottom */
-}
 
-/* Logo styling */
-nav .logo {
-    display: flex;
-    align-items: center;
-}
-
-nav .logo img {
-    height: 40px; /* Adjust as needed */
-    margin-right: 10px; /* Space between logo and text */
-}
-
-nav .logo span {
-    font-size: 20px; /* Adjust as needed */
-    font-weight: bold;
-}
-
-/* Styling the navigation links */
-nav ul {
-    list-style: none;
+.header {
     display: flex;
     justify-content: center;
-    flex-grow: 1;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    position: relative;
+    margin-top: 3 cm;
 }
 
-nav ul li {
-    margin: 0 20px; /* Spacing between links */
+.header__logo {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 4cm;
+    margin-left: -60px;
+
 }
 
-nav ul li a {
+.img__src {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 2cm;
+
+} 
+
+.header__nav {
+    display: flex;
+    flex-grow: 4; 
+    justify-content: center;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-item {
+    margin: 0 20px;
+}
+
+.header__nav-link {
     text-decoration: none;
     color: black;
-    font-size: 16px;
-    font-weight: normal;
-    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #00aaff; /* Change this color to the desired hover color */
+.header__nav-link:hover {
+    color: #00aaff; 
 }
 
-/* Highlighting the active link */
-nav ul li a.active {
-    color: #030608; /* Color of the active link */
-}
-
-/* Styling the callback button */
-nav .callback {
+.header__callback-btn {
     padding: 10px 20px;
     border: 1px solid black;
-    background-color: white;
-    color: black;
-    text-decoration: none;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    position: absolute;
+    right: 3cm;
+}
+
+.header__callback-btn:hover {
+    background-color: #00aaff;
+    color: white;
+}
+
+
+.main {
+    padding: 20px;
+    margin-bottom: 200px;
+    font-family: Arial, sans-serif;;
+}
+
+.about {
+    text-align: center;
+    margin-top: 2cm;
+}
+
+.about__title {
+    font-size: 36px;
+    margin-bottom: 1cm;
+}
+
+.about__description {
     font-size: 16px;
-    transition: all 0.3s ease;
+    margin-bottom: 40px;
+    white-space: pre-wrap; 
+    text-align: center; 
+    line-height: 1.5; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-nav .callback:hover {
-    background-color: #00aaff;
+.about__team {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.team-member {
+    text-align: left;
+}
+
+
+.team-member__photo-first {
+    width: 135px;
+    height: 150px;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+
+}
+ 
+.team-member__photo {
+    width: 150px;
+    height: 150px;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.team-member__photo--john {
+    background-image: url('john.jpg');
+    background-size: cover;
+}
+
+.team-member__name {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.team-member__role {
+    font-size: 14px;
+    color: gray;
+}
+
+.team-member__photo:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.team-member__name:hover,
+.team-member__role:hover {
+    color: #00aaff; 
+    transform: scale(1.05); 
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+
+
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer__logo {
+    margin-bottom: 0.5cm; 
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1cm; 
+}
+
+.footer__nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__nav-item {
+    margin: 0 20px;
+}
+
+.footer__nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.footer__nav-link:hover {
+    color: #00aaff; 
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.footer__social-link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    border-radius: 50%;
+    text-decoration: none;
+    line-height: 40px;
     color: white;
-    cursor: pointer;
+    text-align: center;
 }
 
-/* Active state for the callback button when clicked */
-nav .callback:active {
+.footer__social-link:hover {
     background-color: #00aaff;
-    color: white;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Cursor pointer for links */
-nav ul li a, nav .callback {
-    cursor: pointer;
+.site-header {
+    padding: 10px;
+    box-sizing: border-box;
 }
+
+.logo {
+    margin-bottom: 10px;
+}
+
+.site-nav {
+    margin-bottom: 10px;
+}
+
+.cta {
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+   
