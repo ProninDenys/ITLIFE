@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ITLIFE/static/css/main.4d766b8e.css",
+    "main.js": "/ITLIFE/static/js/main.0eab2805.js",
+    "index.html": "/ITLIFE/index.html",
+    "main.4d766b8e.css.map": "/ITLIFE/static/css/main.4d766b8e.css.map",
+    "main.0eab2805.js.map": "/ITLIFE/static/js/main.0eab2805.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d766b8e.css",
+    "static/js/main.0eab2805.js"
+  ]
+}
